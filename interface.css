@@ -1,0 +1,165 @@
+/* Styles généraux */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* En-tête */
+.stApp header {
+    background-color: #497fc5;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Sidebar */
+.sidebar .sidebar-content {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    text-align: center; /* Center align content in sidebar */
+}
+
+/* Logo dans la sidebar */
+.sidebar img {
+    display: block;
+    margin: 1rem; /* Reduced margin for a smaller logo */
+    width: 20px; /* Reduced width for a smaller logo */
+    height: 20px; /* Reduced height for a smaller logo */
+    text-align: center; /* Center align the image in the sidebar */
+}
+
+/* Titres */
+h1 {
+    color: #497fc5;
+    margin-bottom: 1rem;
+}
+
+/* Graphiques et visualisations */
+.stPlot {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Barres de progression */
+.stProgress > div {
+    background-color: #497fc5 !important;
+}
+
+.stProgress {
+    height: 20px !important;
+    border-radius: 10px !important;
+    background-color: #e9ecef !important;
+}
+
+/* Boutons */
+.stButton > button {
+    background-color: #497fc5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.stButton > button:hover {
+    background-color: #3a669e;
+}
+
+/* Messages d'erreur */
+.stAlert {
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+/* Conteneurs */
+.stContainer {
+    background: white;
+    border-radius: 0%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: #3a669e;
+    width: 30;
+}
+
+/* Tableaux */
+.dataframe {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.dataframe th {
+    background-color: #497fc5;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.dataframe td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Liens */
+a {
+    color: #497fc5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Texte explicatif */
+.explanation-text {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-left: 4px solid #497fc5;
+    margin: 1rem 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .sidebar .sidebar-content {
+        padding: 1rem;
+    }
+    
+    .stContainer {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* Styles pour l'analyse de la page */
+    .page-analysis {
+        background-color: #e9ecef; /* Light background for page analysis */
+        padding: 1rem;
+        border-radius: 4px;
+        margin: 1rem 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .page-analysis h2 {
+        color: #497fc5; /* Title color for page analysis */
+    }
+    
+    .page-analysis p {
+        color: #333; /* Text color for page analysis */
+    }
+}
